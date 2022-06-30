@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+  --fontCol1: #17252a;
+  --col2: #2b7a78;
+  --bodyBg: #3aafa9;
+  --col1: #def2f1;
+  --font2: #feffff;
+  --fontFam1: 'Poppins', sans-serif;
+  --fontFam2: 'Lato', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+.container {
+  background-color: var(--bodyBg);
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: var(--fontFam1);
+  color: var(--fontCol1);
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 1.2rem;
+}
+
+.item {
+
+}
+
+img {
+  width:100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+
+
+}
