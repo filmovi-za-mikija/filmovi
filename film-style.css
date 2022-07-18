@@ -110,14 +110,17 @@ tr:nth-child(even) {
 }
 
 td button {
-  padding: 2px 12px;
+  padding: 7px 15px;
   background-color: var(--bg2);
   border: 0.8px solid var(--fontCol2);
+
 }
 
 td a {
   text-decoration: none;
   color: var(--fontCol1);
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 td a:visited {
