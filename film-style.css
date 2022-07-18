@@ -2,18 +2,23 @@
 
 
 :root {
-  --fontCol1: #17252a;
-  --col2: #2b7a78;
-  --bodyBg: #3aafa9;
-  --col1: #def2f1;
-  --font2: #feffff;
   --fontFam1: 'Poppins', sans-serif;
   --fontFam2: 'Lato', sans-serif;
+
+  --crvena: #e50914;
+  --fontCol1: #3d4449;
+  --fontCol2: #7f888f;
+  --bg1: #eff1f2;
+  --bg2: #f5f6f7;
+  --footerCol: #9fa3a6;
 }
+
+
 
 .strana-filma {
   max-width: 700px;
   padding: 15px;
+  margin: 0 auto;
 }
 
 img{
@@ -21,11 +26,13 @@ img{
   width: 100%;
   margin: 0;
   padding: 0;
+  border-radius: 5px;
 }
 
 .info {
   display: flex;
-
+  justify-content: space-between;
+  padding-right: 40px;
 }
 
 .slika {
@@ -34,13 +41,38 @@ img{
 
 .naziv {
   margin: 10px 10px;
-  color: var(--fontCol1)
+  color: var(--fontCol1);
 }
 
-.sadrzaj p {
-  font-size: 1.1rem;
+.naziv h3 {
+  border-bottom: 3px solid var(--crvena);
+  padding-bottom: 5px;
+  font-family: var(--fontFam1);
+}
+
+.info-naziv {
+  margin-top: 7px;
+  color: var(--fontCol2);
+  font-family: var(--fontFam2);
+}
+
+.original-naslov {
+  color: var(--fontCol2);
+  font-family: var(--fontFam2);
+  font-size: 0.7rem;
+}
+
+.sadr {
+  font-family: var(--fontFam1);
+  color: var(--fontCol1);
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.sadr-text {
+  font-size: 0.9rem;
   line-height: 1.18;
-  color: var(--col1);
+  color: var(--fontCol2);
   font-family: var(--fontFam2);
 }
 
@@ -48,7 +80,51 @@ img{
   margin: 20px 0;
 }
 
-.ep {
+.sezona-broj {
+  color: var(--fontCol1);
+  font-family: var(--fontFam1);
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  margin: 20px auto;
+}
+
+th {
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--fontCol1);
+}
+
+ table, th, td {
+  border-bottom: 1px solid var(--fontCol2);
+  border-collapse: collapse;
+  padding: 10px 3px;
+  color: var(--fontCol1);
+  font-family: var(--fontFam2);
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg1);
+}
+
+td button {
+  padding: 2px 12px;
+  background-color: var(--bg2);
+  border: 0.8px solid var(--fontCol2);
+}
+
+td a {
+  text-decoration: none;
+  color: var(--fontCol1);
+}
+
+td a:visited {
+  color: darkgreen;
+}
+
+/* .ep {
   display: flex;
   margin-top: 10px;
   align-items: center;
@@ -66,4 +142,4 @@ img{
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-}
+} */

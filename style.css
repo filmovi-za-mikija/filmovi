@@ -2,13 +2,15 @@
 
 
 :root {
-  --fontCol1: #17252a;
-  --col2: #2b7a78;
-  --bodyBg: #3aafa9;
-  --col1: #def2f1;
-  --font2: #feffff;
   --fontFam1: 'Poppins', sans-serif;
   --fontFam2: 'Lato', sans-serif;
+
+  --crvena: #e50914;
+  --fontCol1: #3d4449;
+  --fontCol2: #7f888f;
+  --bg1: #eff1f2;
+  --bg2: #f5f6f7;
+  --footerCol: #9fa3a6;
 
 }
 
@@ -19,7 +21,7 @@
 }
 
 body {
-
+  background-color: #ffffff;
 }
 
 .container {
@@ -33,24 +35,45 @@ h1 {
   font-family: var(--fontFam1);
   color: var(--fontCol1);
   text-transform: uppercase;
+  border-bottom: 4px solid var(--crvena);
+
+
+}
+
+.pocetni-naslov {
+  font-size: 1.1rem;
+  padding-bottom: 15px;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 1.2rem;
 }
 
 .item {
-
+  padding: 10px;
 }
 
 img {
   width:100%;
   height: 100%;
+
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow:  9px 5px 18px #cecece,
+             -9px -9px 18px #f2f2f2;
+}
+
+.ime-naslova {
+  color: var(--fontCol2);
+  margin-top: 9px;
+  padding-left: 10px;
+
 }
 
 
@@ -64,7 +87,7 @@ img {
 @media screen and (max-width: 500px) {
 
   .wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   h1 {
