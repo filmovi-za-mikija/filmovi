@@ -84,6 +84,7 @@ img{
   color: var(--fontCol1);
   font-family: var(--fontFam1);
   font-size: 0.9rem;
+  margin-top: 4rem;
 }
 
 table {
